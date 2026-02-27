@@ -1,6 +1,7 @@
 from agents.component_agent import select_components
 from agents.validation_agent import validate_components
 from agents.requirement_agent import parse_requirements  # safe when imported, not run as __main__
+from .design import generate_design  
 
 def generate_design(user_input: str):
     # 1️⃣ Parse requirements
