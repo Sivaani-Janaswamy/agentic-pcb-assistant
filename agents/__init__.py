@@ -1,7 +1,6 @@
-# agents/__init__.py
-from agents.requirement_agent import parse_requirements
 from agents.component_agent import select_components
 from agents.validation_agent import validate_components
+from agents.requirement_agent import parse_requirements  # safe when imported, not run as __main__
 
 def generate_design(user_input: str):
     # 1️⃣ Parse requirements
@@ -13,7 +12,7 @@ def generate_design(user_input: str):
     # 3️⃣ Validate components
     validation = validate_components(requirements, selected_components)
 
-    # 4️⃣ Layout recommendations (hackathon: simple placeholders)
+    # 4️⃣ Layout recommendations
     layout_recommendations = [
         "Place regulator near input capacitor",
         "Keep output capacitor close to load",
