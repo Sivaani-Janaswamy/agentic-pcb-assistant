@@ -79,7 +79,7 @@ The system is **agentic**, meaning it is **autonomous and iterative**, not just 
 
 ## Technology Stack
 
-- **LLM API**: OpenAI GPT API (no custom model training required)  
+- **LLM API**: Local LLM for requirement parsing and reasoning: Transformer Torch 
 - **NLP**: Requirement extraction and structured reasoning  
 - **Database**: Component database for comparison and selection  
 - **Engineering Tools**: Validation tools for electrical and environmental feasibility  
