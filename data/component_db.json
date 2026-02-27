@@ -1,0 +1,55 @@
+{
+  "regulators": [
+    {
+      "name": "LM7805",
+      "type": "linear",
+      "output_voltage": 5,
+      "max_current": 1.0,
+      "input_voltage_min": 7,
+      "input_voltage_max": 25,
+      "package": "TO-220"
+    },
+    {
+      "name": "AMS1117-5.0",
+      "type": "linear",
+      "output_voltage": 5,
+      "max_current": 1.0,
+      "input_voltage_min": 6,
+      "input_voltage_max": 15,
+      "package": "SOT-223"
+    },
+    {
+      "name": "LM2596",
+      "type": "switching",
+      "output_voltage": 5,
+      "max_current": 3.0,
+      "input_voltage_min": 7,
+      "input_voltage_max": 40,
+      "package": "TO-220"
+    }
+  ],
+
+  "capacitors": [
+    {
+      "name": "Input Capacitor",
+      "value": "0.33uF",
+      "voltage_rating": 50,
+      "type": "ceramic"
+    },
+    {
+      "name": "Output Capacitor",
+      "value": "0.1uF",
+      "voltage_rating": 50,
+      "type": "ceramic"
+    }
+  ],
+
+  "diodes": [
+    {
+      "name": "1N4007",
+      "type": "rectifier",
+      "max_current": 1.0,
+      "max_voltage": 1000
+    }
+  ]
+}
