@@ -1,7 +1,7 @@
 import json
 
 def load_db():
-    with open("agentic-pcb-assistant/data/component_db.json", "r") as f:
+    with open("./data/component_db.json", "r") as f:
         db = json.load(f)
     return db
 def find_regulator(voltage, current):
